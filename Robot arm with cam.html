@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Surveillance Robot Arm</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+.robot {
+
+  color: rgb(57, 81, 96);
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 4px;
+  font-weight: bold;
+  transition-duration: .3s;
+  cursor: pointer;
+  background-color: #008CBA;
+}
+
+.robot {
+  background-color: white; 
+  border: 4px solid #008CBA;
+}
+
+.robot:hover {
+  background-color: #4fb2d0;
+}
+
+.stop {
+  padding: 14px 110px;
+  border:4px solid #df4620;
+}
+
+.stop:hover {
+  background-color: #ff6c00;
+}
+
+.text {
+  display: inline-block;
+  background-color: white; 
+  color: rgb(0, 115, 153); 
+  text-align: center;
+  font-size: 40px;
+  margin: 8px 8px;
+  border-style: none none inset;
+  border-width: 4px;
+  font-weight: bold;
+  border-color: #566671;
+}
+
+</style>
+	</head>
+	<style>table ,td, tr {width: 40%;}
+	</style>
+	<body>
+   		<center>
+       		
+    	<table style="float:right; width:100%; max-width: 400px; height:300px;">
+    <br>
+    <p class="text">Web Controlled Surveillance Robot Arm</p>
+    <br>
+    <br>
+    <form action="/1" method="POST">
+    <button id="mcf" class="robot">OPEN</button>
+    </form>
+    <form action="/2" method="POST">
+    <button id="mcb" class="robot">CLOSE</button>
+    </form>
+    <br>
+    <form action="/3" method="POST">
+    <button id="ma1f" class="robot">UP</button>
+    </form>
+    <form action="/4" method="POST">
+    <button id="ma1b" class="robot">DOWN</button>
+    </form>
+    <br>
+    <form action="/5" method="POST">
+    <button id="ma2f" class="robot">UP</button>
+    </form>
+    <form action="/6" method="POST">
+    <button id="ma2b" class="robot">DOWN</button>
+    </form>
+    <br>
+    <form action="/7" method="POST">
+    <button id="ma3f" class="robot">UP</button>
+    </form>
+    <form action="/8" method="POST">
+    <button id="ma3b" class="robot">DOWN</button>
+    </form>
+    <br>
+    <form action="/9" method="POST">
+    <button id="mrf" class="robot">Left</button>
+    </form>
+    <form action="/10" method="POST">
+    <button id="mrb" class="robot">Right</button>
+    </form>
+    <br>
+    <form action="/11" method="POST">
+    <button id="stop" class="robot stop">STOP</button>
+    </form>
+    <br>
+	<img src="http://192.168.191.108:8081/" style="float:center; width:100%; max-width: 700px; max-height:600px; border-radius:10px">
+      	     </img>
+	</center>
+</body>
+</html>
